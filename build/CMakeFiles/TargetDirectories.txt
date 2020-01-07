@@ -1,0 +1,8 @@
+/home/philippe/Projects/CPP_rtype_2019/build/CMakeFiles/rebuild_cache.dir
+/home/philippe/Projects/CPP_rtype_2019/build/CMakeFiles/edit_cache.dir
+/home/philippe/Projects/CPP_rtype_2019/build/src/client/CMakeFiles/rebuild_cache.dir
+/home/philippe/Projects/CPP_rtype_2019/build/src/client/CMakeFiles/r-type_client.dir
+/home/philippe/Projects/CPP_rtype_2019/build/src/client/CMakeFiles/edit_cache.dir
+/home/philippe/Projects/CPP_rtype_2019/build/src/server/CMakeFiles/rebuild_cache.dir
+/home/philippe/Projects/CPP_rtype_2019/build/src/server/CMakeFiles/r-type_server.dir
+/home/philippe/Projects/CPP_rtype_2019/build/src/server/CMakeFiles/edit_cache.dir

@@ -1,0 +1,35 @@
+README:
+
+To compile on Windows:
+
+MANDATORY :
+	- CMake (at least 3.10)
+	- conan
+	- SFML 2.5.1
+	- Visual Studio 2017
+
+TO CHECK BEFORE COMPILING :
+	- .conan/settings.yml -> In the compiler section > Visual Studio > Version, check if there is 15
+	- .conan/profiles/default -> Check that the compiler variable = Visual Studio and compiler.version = 15 && build_type = Debug
+
+Compilation line : mkdir build //if directory doesn't exist// && cd build && conan install .. --build=missing &&
+cmake .. -G "Visual Studio 15 2017 Win64" && cmake --build .
+
+
+^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^
+
+
+Pour compiler sur Windows:
+
+PREREQUIS :
+	- CMake (minimum 3.10)
+	- conan
+	- SFML 2.5.1
+	- Visual Studio 2017
+
+A VERIFIER AVANT DE COMPILER :
+	- .conan/settings.yml -> Dans la section compiler > Visual Studio > Version, vérifier qu'il y a la 15
+	- .conan/profiles/default -> Vérifier que la variable compiler = Visual Studio et compiler.version = 15 && build_type = Debug
+
+Ligne de commande pour compiler : mkdir build //si le dossier n'existe pas// && cd build && conan install .. --build=missing &&
+cmake .. -G "Visual Studio 15 2017 Win64" && cmake --build .

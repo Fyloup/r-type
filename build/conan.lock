@@ -1,0 +1,1113 @@
+{
+ "profile": "[settings]\narch=x86_64\narch_build=x86_64\nbuild_type=Release\ncompiler=gcc\ncompiler.libcxx=libstdc++11\ncompiler.version=8\nos=Linux\nos_build=Linux\n[options]\n[build_requires]\n[env]\n",
+ "graph_lock": {
+  "nodes": {
+   "372b7853-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_tuple/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_static_assert/1.69.0@bincrafters/stable#0": "372b7851-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7855-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "libpng/1.6.34@bincrafters/stable#0:4f75e4b120320a9fb6ac0012242d9ac95d18b6f6#0",
+    "options": "fPIC=True\nshared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": {
+     "zlib/1.2.11@conan/stable#0": "372b7854-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7857-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "flac/1.3.2@bincrafters/stable#0:f543456c1caabe11e7287dbf220c339d96ca7749#0",
+    "options": "fPIC=True\nshared=False\nuse_asm=False\nogg:fPIC=True\nogg:shared=False",
+    "requires": {
+     "ogg/1.3.3@bincrafters/stable#0": "372b7856-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7867-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_cycle_group_b/1.69.0@bincrafters/stable#0:cb8e889cd3c2d086a734d1f10b07fae5eef5b8bf#0",
+    "options": "shared=False\nboost_atomic:shared=False\nboost_container:shared=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_array/1.69.0@bincrafters/stable#0": "372b7858-20df-11ea-a425-f85971c6cb7c",
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_atomic/1.69.0@bincrafters/stable#0": "372b785a-20df-11ea-a425-f85971c6cb7c",
+     "boost_concept_check/1.69.0@bincrafters/stable#0": "372b785b-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_container/1.69.0@bincrafters/stable#0": "372b785c-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_detail/1.69.0@bincrafters/stable#0": "372b785d-20df-11ea-a425-f85971c6cb7c",
+     "boost_fusion/1.69.0@bincrafters/stable#0": "372b785e-20df-11ea-a425-f85971c6cb7c",
+     "boost_integer/1.69.0@bincrafters/stable#0": "372b785f-20df-11ea-a425-f85971c6cb7c",
+     "boost_lambda/1.69.0@bincrafters/stable#0": "372b7860-20df-11ea-a425-f85971c6cb7c",
+     "boost_mpl/1.69.0@bincrafters/stable#0": "372b7861-20df-11ea-a425-f85971c6cb7c",
+     "boost_numeric_conversion/1.69.0@bincrafters/stable#0": "372b7862-20df-11ea-a425-f85971c6cb7c",
+     "boost_predef/1.69.0@bincrafters/stable#0": "372b7863-20df-11ea-a425-f85971c6cb7c",
+     "boost_range/1.69.0@bincrafters/stable#0": "372b7864-20df-11ea-a425-f85971c6cb7c",
+     "boost_smart_ptr/1.69.0@bincrafters/stable#0": "372b7865-20df-11ea-a425-f85971c6cb7c",
+     "boost_static_assert/1.69.0@bincrafters/stable#0": "372b7851-20df-11ea-a425-f85971c6cb7c",
+     "boost_throw_exception/1.69.0@bincrafters/stable#0": "372b7866-20df-11ea-a425-f85971c6cb7c",
+     "boost_tuple/1.69.0@bincrafters/stable#0": "372b7853-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7869-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "freetype/2.9.0@bincrafters/stable#0:876d4331adf573973aca1cbdf6614fdd41b8c51e#0",
+    "options": "fPIC=True\nshared=False\nwith_bzip2=True\nwith_png=True\nwith_zlib=True\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nlibpng:fPIC=True\nlibpng:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": {
+     "libpng/1.6.34@bincrafters/stable#0": "372b7855-20df-11ea-a425-f85971c6cb7c",
+     "zlib/1.2.11@conan/stable#0": "372b7854-20df-11ea-a425-f85971c6cb7c",
+     "bzip2/1.0.6@conan/stable#0": "372b7868-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b786c-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_intrusive/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_container_hash/1.69.0@bincrafters/stable#0": "372b786a-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_move/1.69.0@bincrafters/stable#0": "372b786b-20df-11ea-a425-f85971c6cb7c",
+     "boost_static_assert/1.69.0@bincrafters/stable#0": "372b7851-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b786e-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_ratio/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_integer/1.69.0@bincrafters/stable#0": "372b785f-20df-11ea-a425-f85971c6cb7c",
+     "boost_mpl/1.69.0@bincrafters/stable#0": "372b7861-20df-11ea-a425-f85971c6cb7c",
+     "boost_rational/1.69.0@bincrafters/stable#0": "372b786d-20df-11ea-a425-f85971c6cb7c",
+     "boost_static_assert/1.69.0@bincrafters/stable#0": "372b7851-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b786f-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "lzma/5.2.4@bincrafters/stable#0:1d877a3df840030e6a8abb74c5ffb9088d08b47a#0",
+    "options": "fPIC=True\nshared=False"
+   },
+   "372b7871-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_foreach/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_iterator/1.69.0@bincrafters/stable#0": "372b7870-20df-11ea-a425-f85971c6cb7c",
+     "boost_mpl/1.69.0@bincrafters/stable#0": "372b7861-20df-11ea-a425-f85971c6cb7c",
+     "boost_range/1.69.0@bincrafters/stable#0": "372b7864-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7876-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_variant/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_bind/1.69.0@bincrafters/stable#0": "372b7872-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_container_hash/1.69.0@bincrafters/stable#0": "372b786a-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_detail/1.69.0@bincrafters/stable#0": "372b785d-20df-11ea-a425-f85971c6cb7c",
+     "boost_integer/1.69.0@bincrafters/stable#0": "372b785f-20df-11ea-a425-f85971c6cb7c",
+     "boost_move/1.69.0@bincrafters/stable#0": "372b786b-20df-11ea-a425-f85971c6cb7c",
+     "boost_mpl/1.69.0@bincrafters/stable#0": "372b7861-20df-11ea-a425-f85971c6cb7c",
+     "boost_preprocessor/1.69.0@bincrafters/stable#0": "372b7873-20df-11ea-a425-f85971c6cb7c",
+     "boost_static_assert/1.69.0@bincrafters/stable#0": "372b7851-20df-11ea-a425-f85971c6cb7c",
+     "boost_throw_exception/1.69.0@bincrafters/stable#0": "372b7866-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_index/1.69.0@bincrafters/stable#0": "372b7874-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c",
+     "boost_utility/1.69.0@bincrafters/stable#0": "372b7875-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7877-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "vorbis/1.3.6@bincrafters/stable#0:08be371161ce02373155daf22f8fa5959548a7d1#0",
+    "options": "fPIC=True\nshared=False\nogg:fPIC=True\nogg:shared=False",
+    "requires": {
+     "ogg/1.3.3@bincrafters/stable#0": "372b7856-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b787d-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_cycle_group_a/1.69.0@bincrafters/stable#0:ca86003a152c55f9ca7e367104432ab53a29d357#0",
+    "options": "shared=False\nboost_exception:shared=False\nboost_regex:shared=False\nboost_regex:use_icu=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_array/1.69.0@bincrafters/stable#0": "372b7858-20df-11ea-a425-f85971c6cb7c",
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_bind/1.69.0@bincrafters/stable#0": "372b7872-20df-11ea-a425-f85971c6cb7c",
+     "boost_concept_check/1.69.0@bincrafters/stable#0": "372b785b-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_container_hash/1.69.0@bincrafters/stable#0": "372b786a-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_detail/1.69.0@bincrafters/stable#0": "372b785d-20df-11ea-a425-f85971c6cb7c",
+     "boost_exception/1.69.0@bincrafters/stable#0": "372b7878-20df-11ea-a425-f85971c6cb7c",
+     "boost_function/1.69.0@bincrafters/stable#0": "372b7879-20df-11ea-a425-f85971c6cb7c",
+     "boost_iterator/1.69.0@bincrafters/stable#0": "372b7870-20df-11ea-a425-f85971c6cb7c",
+     "boost_mpl/1.69.0@bincrafters/stable#0": "372b7861-20df-11ea-a425-f85971c6cb7c",
+     "boost_numeric_conversion/1.69.0@bincrafters/stable#0": "372b7862-20df-11ea-a425-f85971c6cb7c",
+     "boost_optional/1.69.0@bincrafters/stable#0": "372b787a-20df-11ea-a425-f85971c6cb7c",
+     "boost_preprocessor/1.69.0@bincrafters/stable#0": "372b7873-20df-11ea-a425-f85971c6cb7c",
+     "boost_regex/1.69.0@bincrafters/stable#0": "372b787b-20df-11ea-a425-f85971c6cb7c",
+     "boost_static_assert/1.69.0@bincrafters/stable#0": "372b7851-20df-11ea-a425-f85971c6cb7c",
+     "boost_throw_exception/1.69.0@bincrafters/stable#0": "372b7866-20df-11ea-a425-f85971c6cb7c",
+     "boost_tuple/1.69.0@bincrafters/stable#0": "372b7853-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c",
+     "boost_unordered/1.69.0@bincrafters/stable#0": "372b787c-20df-11ea-a425-f85971c6cb7c",
+     "boost_utility/1.69.0@bincrafters/stable#0": "372b7875-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b787f-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_locale/1.69.0@bincrafters/stable#0:98d92593cd3e0fb028ff15c8976c2e5de03e742e#0",
+    "options": "shared=False\nuse_icu=False\nboost_system:shared=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_function/1.69.0@bincrafters/stable#0": "372b7879-20df-11ea-a425-f85971c6cb7c",
+     "boost_iterator/1.69.0@bincrafters/stable#0": "372b7870-20df-11ea-a425-f85971c6cb7c",
+     "boost_smart_ptr/1.69.0@bincrafters/stable#0": "372b7865-20df-11ea-a425-f85971c6cb7c",
+     "boost_static_assert/1.69.0@bincrafters/stable#0": "372b7851-20df-11ea-a425-f85971c6cb7c",
+     "boost_system/1.69.0@bincrafters/stable#0": "372b787e-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7873-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_preprocessor/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ]
+   },
+   "372b7872-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_bind/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7881-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_pool/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_integer/1.69.0@bincrafters/stable#0": "372b785f-20df-11ea-a425-f85971c6cb7c",
+     "boost_throw_exception/1.69.0@bincrafters/stable#0": "372b7866-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c",
+     "boost_winapi/1.69.0@bincrafters/stable#0": "372b7880-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b785e-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_fusion/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_container_hash/1.69.0@bincrafters/stable#0": "372b786a-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_function_types/1.69.0@bincrafters/stable#0": "372b7882-20df-11ea-a425-f85971c6cb7c",
+     "boost_mpl/1.69.0@bincrafters/stable#0": "372b7861-20df-11ea-a425-f85971c6cb7c",
+     "boost_preprocessor/1.69.0@bincrafters/stable#0": "372b7873-20df-11ea-a425-f85971c6cb7c",
+     "boost_static_assert/1.69.0@bincrafters/stable#0": "372b7851-20df-11ea-a425-f85971c6cb7c",
+     "boost_tuple/1.69.0@bincrafters/stable#0": "372b7853-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c",
+     "boost_typeof/1.69.0@bincrafters/stable#0": "372b7883-20df-11ea-a425-f85971c6cb7c",
+     "boost_utility/1.69.0@bincrafters/stable#0": "372b7875-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b787e-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_system/1.69.0@bincrafters/stable#0:6239ed674d350a4a2fb629c83ef5615c3bbb2178#0",
+    "options": "shared=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_winapi/1.69.0@bincrafters/stable#0": "372b7880-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7864-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_range/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "boost_cycle_group_a:shared=False\nboost_exception:shared=False\nboost_regex:shared=False\nboost_regex:use_icu=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_cycle_group_a/1.69.0@bincrafters/stable#0": "372b787d-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7879-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_function/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_bind/1.69.0@bincrafters/stable#0": "372b7872-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_integer/1.69.0@bincrafters/stable#0": "372b785f-20df-11ea-a425-f85971c6cb7c",
+     "boost_preprocessor/1.69.0@bincrafters/stable#0": "372b7873-20df-11ea-a425-f85971c6cb7c",
+     "boost_throw_exception/1.69.0@bincrafters/stable#0": "372b7866-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_index/1.69.0@bincrafters/stable#0": "372b7874-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c",
+     "boost_typeof/1.69.0@bincrafters/stable#0": "372b7883-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7882-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_function_types/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_detail/1.69.0@bincrafters/stable#0": "372b785d-20df-11ea-a425-f85971c6cb7c",
+     "boost_mpl/1.69.0@bincrafters/stable#0": "372b7861-20df-11ea-a425-f85971c6cb7c",
+     "boost_preprocessor/1.69.0@bincrafters/stable#0": "372b7873-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7890-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_cycle_group_c/1.69.0@bincrafters/stable#0:f739c48c76f3a3a4c1a1a62197dc8bc80262319a#0",
+    "options": "shared=False\nthreadapi=default\nuse_bzip2=True\nuse_lzma=True\nuse_zlib=True\nuse_zstd=True\nboost_atomic:shared=False\nboost_chrono:shared=False\nboost_container:shared=False\nboost_cycle_group_b:shared=False\nboost_exception:shared=False\nboost_filesystem:shared=False\nboost_locale:shared=False\nboost_locale:use_icu=False\nboost_regex:shared=False\nboost_regex:use_icu=False\nboost_system:shared=False\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nlzma:fPIC=True\nlzma:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False\nzstd:fPIC=True\nzstd:shared=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_algorithm/1.69.0@bincrafters/stable#0": "372b7884-20df-11ea-a425-f85971c6cb7c",
+     "boost_array/1.69.0@bincrafters/stable#0": "372b7858-20df-11ea-a425-f85971c6cb7c",
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_atomic/1.69.0@bincrafters/stable#0": "372b785a-20df-11ea-a425-f85971c6cb7c",
+     "boost_bind/1.69.0@bincrafters/stable#0": "372b7872-20df-11ea-a425-f85971c6cb7c",
+     "boost_chrono/1.69.0@bincrafters/stable#0": "372b7885-20df-11ea-a425-f85971c6cb7c",
+     "boost_concept_check/1.69.0@bincrafters/stable#0": "372b785b-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_container/1.69.0@bincrafters/stable#0": "372b785c-20df-11ea-a425-f85971c6cb7c",
+     "boost_container_hash/1.69.0@bincrafters/stable#0": "372b786a-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_detail/1.69.0@bincrafters/stable#0": "372b785d-20df-11ea-a425-f85971c6cb7c",
+     "boost_endian/1.69.0@bincrafters/stable#0": "372b7886-20df-11ea-a425-f85971c6cb7c",
+     "boost_exception/1.69.0@bincrafters/stable#0": "372b7878-20df-11ea-a425-f85971c6cb7c",
+     "boost_filesystem/1.69.0@bincrafters/stable#0": "372b7887-20df-11ea-a425-f85971c6cb7c",
+     "boost_foreach/1.69.0@bincrafters/stable#0": "372b7871-20df-11ea-a425-f85971c6cb7c",
+     "boost_function/1.69.0@bincrafters/stable#0": "372b7879-20df-11ea-a425-f85971c6cb7c",
+     "boost_function_types/1.69.0@bincrafters/stable#0": "372b7882-20df-11ea-a425-f85971c6cb7c",
+     "boost_fusion/1.69.0@bincrafters/stable#0": "372b785e-20df-11ea-a425-f85971c6cb7c",
+     "boost_integer/1.69.0@bincrafters/stable#0": "372b785f-20df-11ea-a425-f85971c6cb7c",
+     "boost_intrusive/1.69.0@bincrafters/stable#0": "372b786c-20df-11ea-a425-f85971c6cb7c",
+     "boost_io/1.69.0@bincrafters/stable#0": "372b7888-20df-11ea-a425-f85971c6cb7c",
+     "boost_iterator/1.69.0@bincrafters/stable#0": "372b7870-20df-11ea-a425-f85971c6cb7c",
+     "boost_lexical_cast/1.69.0@bincrafters/stable#0": "372b7889-20df-11ea-a425-f85971c6cb7c",
+     "boost_locale/1.69.0@bincrafters/stable#0": "372b787f-20df-11ea-a425-f85971c6cb7c",
+     "boost_math/1.69.0@bincrafters/stable#0": "372b788a-20df-11ea-a425-f85971c6cb7c",
+     "boost_move/1.69.0@bincrafters/stable#0": "372b786b-20df-11ea-a425-f85971c6cb7c",
+     "boost_mpl/1.69.0@bincrafters/stable#0": "372b7861-20df-11ea-a425-f85971c6cb7c",
+     "boost_numeric_conversion/1.69.0@bincrafters/stable#0": "372b7862-20df-11ea-a425-f85971c6cb7c",
+     "boost_optional/1.69.0@bincrafters/stable#0": "372b787a-20df-11ea-a425-f85971c6cb7c",
+     "boost_phoenix/1.69.0@bincrafters/stable#0": "372b788b-20df-11ea-a425-f85971c6cb7c",
+     "boost_pool/1.69.0@bincrafters/stable#0": "372b7881-20df-11ea-a425-f85971c6cb7c",
+     "boost_predef/1.69.0@bincrafters/stable#0": "372b7863-20df-11ea-a425-f85971c6cb7c",
+     "boost_preprocessor/1.69.0@bincrafters/stable#0": "372b7873-20df-11ea-a425-f85971c6cb7c",
+     "boost_proto/1.69.0@bincrafters/stable#0": "372b788c-20df-11ea-a425-f85971c6cb7c",
+     "boost_range/1.69.0@bincrafters/stable#0": "372b7864-20df-11ea-a425-f85971c6cb7c",
+     "boost_rational/1.69.0@bincrafters/stable#0": "372b786d-20df-11ea-a425-f85971c6cb7c",
+     "boost_regex/1.69.0@bincrafters/stable#0": "372b787b-20df-11ea-a425-f85971c6cb7c",
+     "boost_smart_ptr/1.69.0@bincrafters/stable#0": "372b7865-20df-11ea-a425-f85971c6cb7c",
+     "boost_static_assert/1.69.0@bincrafters/stable#0": "372b7851-20df-11ea-a425-f85971c6cb7c",
+     "boost_system/1.69.0@bincrafters/stable#0": "372b787e-20df-11ea-a425-f85971c6cb7c",
+     "boost_throw_exception/1.69.0@bincrafters/stable#0": "372b7866-20df-11ea-a425-f85971c6cb7c",
+     "boost_tokenizer/1.69.0@bincrafters/stable#0": "372b788d-20df-11ea-a425-f85971c6cb7c",
+     "boost_tti/1.69.0@bincrafters/stable#0": "372b788e-20df-11ea-a425-f85971c6cb7c",
+     "boost_tuple/1.69.0@bincrafters/stable#0": "372b7853-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c",
+     "boost_typeof/1.69.0@bincrafters/stable#0": "372b7883-20df-11ea-a425-f85971c6cb7c",
+     "boost_unordered/1.69.0@bincrafters/stable#0": "372b787c-20df-11ea-a425-f85971c6cb7c",
+     "boost_utility/1.69.0@bincrafters/stable#0": "372b7875-20df-11ea-a425-f85971c6cb7c",
+     "boost_variant/1.69.0@bincrafters/stable#0": "372b7876-20df-11ea-a425-f85971c6cb7c",
+     "boost_winapi/1.69.0@bincrafters/stable#0": "372b7880-20df-11ea-a425-f85971c6cb7c",
+     "bzip2/1.0.6@conan/stable#0": "372b7868-20df-11ea-a425-f85971c6cb7c",
+     "zlib/1.2.11@conan/stable#0": "372b7854-20df-11ea-a425-f85971c6cb7c",
+     "lzma/5.2.4@bincrafters/stable#0": "372b786f-20df-11ea-a425-f85971c6cb7c",
+     "zstd/1.3.5@bincrafters/stable#0": "372b788f-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b788a-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_math/1.69.0@bincrafters/stable#0:1196c1d70cbaef7b10fefad4015cb0bbdf50a87d#0",
+    "options": "boost_atomic:shared=False\nboost_container:shared=False\nboost_cycle_group_b:shared=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_cycle_group_b/1.69.0@bincrafters/stable#0": "372b7867-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7892-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_context/1.69.0@bincrafters/stable#0:892aa2b888e09238d8825b567083c52c42a758e1#0",
+    "options": "shared=False\nboost_thread:shared=False\nboost_thread:threadapi=default",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_pool/1.69.0@bincrafters/stable#0": "372b7881-20df-11ea-a425-f85971c6cb7c",
+     "boost_predef/1.69.0@bincrafters/stable#0": "372b7863-20df-11ea-a425-f85971c6cb7c",
+     "boost_smart_ptr/1.69.0@bincrafters/stable#0": "372b7865-20df-11ea-a425-f85971c6cb7c",
+     "boost_thread/1.69.0@bincrafters/stable#0": "372b7891-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7865-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_smart_ptr/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_move/1.69.0@bincrafters/stable#0": "372b786b-20df-11ea-a425-f85971c6cb7c",
+     "boost_predef/1.69.0@bincrafters/stable#0": "372b7863-20df-11ea-a425-f85971c6cb7c",
+     "boost_static_assert/1.69.0@bincrafters/stable#0": "372b7851-20df-11ea-a425-f85971c6cb7c",
+     "boost_throw_exception/1.69.0@bincrafters/stable#0": "372b7866-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7858-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_array/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_static_assert/1.69.0@bincrafters/stable#0": "372b7851-20df-11ea-a425-f85971c6cb7c",
+     "boost_throw_exception/1.69.0@bincrafters/stable#0": "372b7866-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7854-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "zlib/1.2.11@conan/stable#0:1d877a3df840030e6a8abb74c5ffb9088d08b47a#0",
+    "options": "fPIC=True\nminizip=False\nshared=False"
+   },
+   "372b7868-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "bzip2/1.0.6@conan/stable#0:a5875aed3fc7ae8dd0488f7e5e99acbc480d721d#0",
+    "options": "build_executable=True\nfPIC=True\nshared=False"
+   },
+   "372b7893-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "libalsa/1.1.5@conan/stable#0:7cf43daaf95399d6202b2fd6fab7eab428e8d639#0",
+    "options": "disable_python=True\nfPIC=True\nshared=False"
+   },
+   "372b7874-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_type_index/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_container_hash/1.69.0@bincrafters/stable#0": "372b786a-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_preprocessor/1.69.0@bincrafters/stable#0": "372b7873-20df-11ea-a425-f85971c6cb7c",
+     "boost_smart_ptr/1.69.0@bincrafters/stable#0": "372b7865-20df-11ea-a425-f85971c6cb7c",
+     "boost_static_assert/1.69.0@bincrafters/stable#0": "372b7851-20df-11ea-a425-f85971c6cb7c",
+     "boost_throw_exception/1.69.0@bincrafters/stable#0": "372b7866-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b787a-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_optional/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_detail/1.69.0@bincrafters/stable#0": "372b785d-20df-11ea-a425-f85971c6cb7c",
+     "boost_move/1.69.0@bincrafters/stable#0": "372b786b-20df-11ea-a425-f85971c6cb7c",
+     "boost_predef/1.69.0@bincrafters/stable#0": "372b7863-20df-11ea-a425-f85971c6cb7c",
+     "boost_static_assert/1.69.0@bincrafters/stable#0": "372b7851-20df-11ea-a425-f85971c6cb7c",
+     "boost_throw_exception/1.69.0@bincrafters/stable#0": "372b7866-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c",
+     "boost_utility/1.69.0@bincrafters/stable#0": "372b7875-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7856-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "ogg/1.3.3@bincrafters/stable#0:1d877a3df840030e6a8abb74c5ffb9088d08b47a#0",
+    "options": "fPIC=True\nshared=False"
+   },
+   "372b784f-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_config/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ]
+   },
+   "372b7894-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_date_time/1.69.0@bincrafters/stable#0:994a375f21d40ca93fbbe33ac315d7e57fb6a69f#0",
+    "options": "boost_atomic:shared=False\nboost_chrono:shared=False\nboost_container:shared=False\nboost_cycle_group_b:shared=False\nboost_cycle_group_c:shared=False\nboost_cycle_group_c:threadapi=default\nboost_cycle_group_c:use_bzip2=True\nboost_cycle_group_c:use_lzma=True\nboost_cycle_group_c:use_zlib=True\nboost_cycle_group_c:use_zstd=True\nboost_exception:shared=False\nboost_filesystem:shared=False\nboost_locale:shared=False\nboost_locale:use_icu=False\nboost_regex:shared=False\nboost_regex:use_icu=False\nboost_system:shared=False\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nlzma:fPIC=True\nlzma:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False\nzstd:fPIC=True\nzstd:shared=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_cycle_group_c/1.69.0@bincrafters/stable#0": "372b7890-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b788c-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_proto/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_fusion/1.69.0@bincrafters/stable#0": "372b785e-20df-11ea-a425-f85971c6cb7c",
+     "boost_mpl/1.69.0@bincrafters/stable#0": "372b7861-20df-11ea-a425-f85971c6cb7c",
+     "boost_preprocessor/1.69.0@bincrafters/stable#0": "372b7873-20df-11ea-a425-f85971c6cb7c",
+     "boost_range/1.69.0@bincrafters/stable#0": "372b7864-20df-11ea-a425-f85971c6cb7c",
+     "boost_static_assert/1.69.0@bincrafters/stable#0": "372b7851-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c",
+     "boost_typeof/1.69.0@bincrafters/stable#0": "372b7883-20df-11ea-a425-f85971c6cb7c",
+     "boost_utility/1.69.0@bincrafters/stable#0": "372b7875-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7891-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_thread/1.69.0@bincrafters/stable#0:cb054d0b3e1ca595dc66bc2339d40f1f8f04ab31#0",
+    "options": "shared=False\nthreadapi=default\nboost_atomic:shared=False\nboost_chrono:shared=False\nboost_container:shared=False\nboost_cycle_group_b:shared=False\nboost_cycle_group_c:shared=False\nboost_cycle_group_c:threadapi=default\nboost_cycle_group_c:use_bzip2=True\nboost_cycle_group_c:use_lzma=True\nboost_cycle_group_c:use_zlib=True\nboost_cycle_group_c:use_zstd=True\nboost_exception:shared=False\nboost_filesystem:shared=False\nboost_locale:shared=False\nboost_locale:use_icu=False\nboost_regex:shared=False\nboost_regex:use_icu=False\nboost_system:shared=False\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nlzma:fPIC=True\nlzma:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False\nzstd:fPIC=True\nzstd:shared=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_cycle_group_c/1.69.0@bincrafters/stable#0": "372b7890-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b788d-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_tokenizer/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_iterator/1.69.0@bincrafters/stable#0": "372b7870-20df-11ea-a425-f85971c6cb7c",
+     "boost_mpl/1.69.0@bincrafters/stable#0": "372b7861-20df-11ea-a425-f85971c6cb7c",
+     "boost_throw_exception/1.69.0@bincrafters/stable#0": "372b7866-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7852-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_type_traits/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_static_assert/1.69.0@bincrafters/stable#0": "372b7851-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7889-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_lexical_cast/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "boost_atomic:shared=False\nboost_container:shared=False\nboost_cycle_group_b:shared=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_cycle_group_b/1.69.0@bincrafters/stable#0": "372b7867-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7895-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "openal/1.19.0@bincrafters/stable#0:c11116884528df1ba975497cfb51ec76618e3577#0",
+    "options": "fPIC=True\nshared=False\nlibalsa:disable_python=True\nlibalsa:fPIC=True\nlibalsa:shared=False",
+    "requires": {
+     "libalsa/1.1.5@conan/stable#0": "372b7893-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7861-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_mpl/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_predef/1.69.0@bincrafters/stable#0": "372b7863-20df-11ea-a425-f85971c6cb7c",
+     "boost_preprocessor/1.69.0@bincrafters/stable#0": "372b7873-20df-11ea-a425-f85971c6cb7c",
+     "boost_static_assert/1.69.0@bincrafters/stable#0": "372b7851-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c",
+     "boost_utility/1.69.0@bincrafters/stable#0": "372b7875-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b785a-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_atomic/1.69.0@bincrafters/stable#0:a7d657d377517e264fb4d270e3506ed533faaf06#0",
+    "options": "shared=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7866-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_throw_exception/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7897-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "sfml/2.5.1@bincrafters/stable#0:f22b9fd6fe48b31ae088f919ac8e69cc17abe8e3#d92e6b17e26b124503867c18fd7f15d6",
+    "options": "audio=True\nfPIC=True\ngraphics=True\nnetwork=True\nshared=False\nwindow=True\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nflac:fPIC=True\nflac:shared=False\nflac:use_asm=False\nfreetype:fPIC=True\nfreetype:shared=False\nfreetype:with_bzip2=True\nfreetype:with_png=True\nfreetype:with_zlib=True\nlibalsa:disable_python=True\nlibalsa:fPIC=True\nlibalsa:shared=False\nlibpng:fPIC=True\nlibpng:shared=False\nogg:fPIC=True\nogg:shared=False\nopenal:fPIC=True\nopenal:shared=False\nvorbis:fPIC=True\nvorbis:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": {
+     "freetype/2.9.0@bincrafters/stable#0": "372b7869-20df-11ea-a425-f85971c6cb7c",
+     "stb/20180214@conan/stable#0": "372b7896-20df-11ea-a425-f85971c6cb7c",
+     "openal/1.19.0@bincrafters/stable#0": "372b7895-20df-11ea-a425-f85971c6cb7c",
+     "flac/1.3.2@bincrafters/stable#0": "372b7857-20df-11ea-a425-f85971c6cb7c",
+     "ogg/1.3.3@bincrafters/stable#0": "372b7856-20df-11ea-a425-f85971c6cb7c",
+     "vorbis/1.3.6@bincrafters/stable#0": "372b7877-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b785c-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_container/1.69.0@bincrafters/stable#0:0c22a090122a40c5e4335a3261d4e36cf12771b5#0",
+    "options": "shared=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_container_hash/1.69.0@bincrafters/stable#0": "372b786a-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_intrusive/1.69.0@bincrafters/stable#0": "372b786c-20df-11ea-a425-f85971c6cb7c",
+     "boost_move/1.69.0@bincrafters/stable#0": "372b786b-20df-11ea-a425-f85971c6cb7c",
+     "boost_static_assert/1.69.0@bincrafters/stable#0": "372b7851-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b785d-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_detail/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_preprocessor/1.69.0@bincrafters/stable#0": "372b7873-20df-11ea-a425-f85971c6cb7c",
+     "boost_static_assert/1.69.0@bincrafters/stable#0": "372b7851-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b785b-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_concept_check/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_preprocessor/1.69.0@bincrafters/stable#0": "372b7873-20df-11ea-a425-f85971c6cb7c",
+     "boost_static_assert/1.69.0@bincrafters/stable#0": "372b7851-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7898-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_conversion/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_smart_ptr/1.69.0@bincrafters/stable#0": "372b7865-20df-11ea-a425-f85971c6cb7c",
+     "boost_throw_exception/1.69.0@bincrafters/stable#0": "372b7866-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c",
+     "boost_typeof/1.69.0@bincrafters/stable#0": "372b7883-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7875-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_utility/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_container_hash/1.69.0@bincrafters/stable#0": "372b786a-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_preprocessor/1.69.0@bincrafters/stable#0": "372b7873-20df-11ea-a425-f85971c6cb7c",
+     "boost_static_assert/1.69.0@bincrafters/stable#0": "372b7851-20df-11ea-a425-f85971c6cb7c",
+     "boost_throw_exception/1.69.0@bincrafters/stable#0": "372b7866-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7863-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_predef/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ]
+   },
+   "372b786b-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_move/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_static_assert/1.69.0@bincrafters/stable#0": "372b7851-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7870-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_iterator/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_concept_check/1.69.0@bincrafters/stable#0": "372b785b-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_conversion/1.69.0@bincrafters/stable#0": "372b7898-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_detail/1.69.0@bincrafters/stable#0": "372b785d-20df-11ea-a425-f85971c6cb7c",
+     "boost_function_types/1.69.0@bincrafters/stable#0": "372b7882-20df-11ea-a425-f85971c6cb7c",
+     "boost_fusion/1.69.0@bincrafters/stable#0": "372b785e-20df-11ea-a425-f85971c6cb7c",
+     "boost_mpl/1.69.0@bincrafters/stable#0": "372b7861-20df-11ea-a425-f85971c6cb7c",
+     "boost_optional/1.69.0@bincrafters/stable#0": "372b787a-20df-11ea-a425-f85971c6cb7c",
+     "boost_smart_ptr/1.69.0@bincrafters/stable#0": "372b7865-20df-11ea-a425-f85971c6cb7c",
+     "boost_static_assert/1.69.0@bincrafters/stable#0": "372b7851-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c",
+     "boost_utility/1.69.0@bincrafters/stable#0": "372b7875-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7851-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_static_assert/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7899-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_coroutine/1.69.0@bincrafters/stable#0:cecf82d8535f28f2bca48c572be94f3327d38931#0",
+    "options": "shared=False\nboost_context:shared=False\nboost_exception:shared=False\nboost_system:shared=False\nboost_thread:shared=False\nboost_thread:threadapi=default",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_context/1.69.0@bincrafters/stable#0": "372b7892-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_exception/1.69.0@bincrafters/stable#0": "372b7878-20df-11ea-a425-f85971c6cb7c",
+     "boost_move/1.69.0@bincrafters/stable#0": "372b786b-20df-11ea-a425-f85971c6cb7c",
+     "boost_range/1.69.0@bincrafters/stable#0": "372b7864-20df-11ea-a425-f85971c6cb7c",
+     "boost_system/1.69.0@bincrafters/stable#0": "372b787e-20df-11ea-a425-f85971c6cb7c",
+     "boost_thread/1.69.0@bincrafters/stable#0": "372b7891-20df-11ea-a425-f85971c6cb7c",
+     "boost_throw_exception/1.69.0@bincrafters/stable#0": "372b7866-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c",
+     "boost_utility/1.69.0@bincrafters/stable#0": "372b7875-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7886-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_endian/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_predef/1.69.0@bincrafters/stable#0": "372b7863-20df-11ea-a425-f85971c6cb7c",
+     "boost_static_assert/1.69.0@bincrafters/stable#0": "372b7851-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c",
+     "boost_utility/1.69.0@bincrafters/stable#0": "372b7875-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7878-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_exception/1.69.0@bincrafters/stable#0:51f0235e720c781177c00593082688618ecc99a5#0",
+    "options": "shared=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_smart_ptr/1.69.0@bincrafters/stable#0": "372b7865-20df-11ea-a425-f85971c6cb7c",
+     "boost_throw_exception/1.69.0@bincrafters/stable#0": "372b7866-20df-11ea-a425-f85971c6cb7c",
+     "boost_tuple/1.69.0@bincrafters/stable#0": "372b7853-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b788f-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "zstd/1.3.5@bincrafters/stable#0:1d877a3df840030e6a8abb74c5ffb9088d08b47a#0",
+    "options": "fPIC=True\nshared=False"
+   },
+   "372b788b-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_phoenix/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_bind/1.69.0@bincrafters/stable#0": "372b7872-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_function/1.69.0@bincrafters/stable#0": "372b7879-20df-11ea-a425-f85971c6cb7c",
+     "boost_fusion/1.69.0@bincrafters/stable#0": "372b785e-20df-11ea-a425-f85971c6cb7c",
+     "boost_mpl/1.69.0@bincrafters/stable#0": "372b7861-20df-11ea-a425-f85971c6cb7c",
+     "boost_predef/1.69.0@bincrafters/stable#0": "372b7863-20df-11ea-a425-f85971c6cb7c",
+     "boost_preprocessor/1.69.0@bincrafters/stable#0": "372b7873-20df-11ea-a425-f85971c6cb7c",
+     "boost_proto/1.69.0@bincrafters/stable#0": "372b788c-20df-11ea-a425-f85971c6cb7c",
+     "boost_range/1.69.0@bincrafters/stable#0": "372b7864-20df-11ea-a425-f85971c6cb7c",
+     "boost_smart_ptr/1.69.0@bincrafters/stable#0": "372b7865-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c",
+     "boost_utility/1.69.0@bincrafters/stable#0": "372b7875-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b789b-20df-11ea-a425-f85971c6cb7c": {
+    "pref": null,
+    "options": "bzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nflac:fPIC=True\nflac:shared=False\nflac:use_asm=False\nfreetype:fPIC=True\nfreetype:shared=False\nfreetype:with_bzip2=True\nfreetype:with_png=True\nfreetype:with_zlib=True\nlibalsa:disable_python=True\nlibalsa:fPIC=True\nlibalsa:shared=False\nlibpng:fPIC=True\nlibpng:shared=False\nogg:fPIC=True\nogg:shared=False\nopenal:fPIC=True\nopenal:shared=False\nsfml:audio=True\nsfml:fPIC=True\nsfml:graphics=True\nsfml:network=True\nsfml:shared=False\nsfml:window=True\nvorbis:fPIC=True\nvorbis:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": {
+     "boost_asio/1.69.0@bincrafters/stable#0": "372b789a-20df-11ea-a425-f85971c6cb7c",
+     "sfml/2.5.1@bincrafters/stable#0": "372b7897-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7883-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_typeof/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_preprocessor/1.69.0@bincrafters/stable#0": "372b7873-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b786d-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_rational/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_integer/1.69.0@bincrafters/stable#0": "372b785f-20df-11ea-a425-f85971c6cb7c",
+     "boost_static_assert/1.69.0@bincrafters/stable#0": "372b7851-20df-11ea-a425-f85971c6cb7c",
+     "boost_throw_exception/1.69.0@bincrafters/stable#0": "372b7866-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c",
+     "boost_utility/1.69.0@bincrafters/stable#0": "372b7875-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7896-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "stb/20180214@conan/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": ""
+   },
+   "372b7888-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_io/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7860-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_lambda/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_bind/1.69.0@bincrafters/stable#0": "372b7872-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_detail/1.69.0@bincrafters/stable#0": "372b785d-20df-11ea-a425-f85971c6cb7c",
+     "boost_iterator/1.69.0@bincrafters/stable#0": "372b7870-20df-11ea-a425-f85971c6cb7c",
+     "boost_mpl/1.69.0@bincrafters/stable#0": "372b7861-20df-11ea-a425-f85971c6cb7c",
+     "boost_preprocessor/1.69.0@bincrafters/stable#0": "372b7873-20df-11ea-a425-f85971c6cb7c",
+     "boost_tuple/1.69.0@bincrafters/stable#0": "372b7853-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c",
+     "boost_utility/1.69.0@bincrafters/stable#0": "372b7875-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7862-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_numeric_conversion/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_conversion/1.69.0@bincrafters/stable#0": "372b7898-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_mpl/1.69.0@bincrafters/stable#0": "372b7861-20df-11ea-a425-f85971c6cb7c",
+     "boost_preprocessor/1.69.0@bincrafters/stable#0": "372b7873-20df-11ea-a425-f85971c6cb7c",
+     "boost_throw_exception/1.69.0@bincrafters/stable#0": "372b7866-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7885-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_chrono/1.69.0@bincrafters/stable#0:86a1657d79cb02690a82ce235c8dee8e155f0ada#0",
+    "options": "shared=False\nboost_system:shared=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_integer/1.69.0@bincrafters/stable#0": "372b785f-20df-11ea-a425-f85971c6cb7c",
+     "boost_move/1.69.0@bincrafters/stable#0": "372b786b-20df-11ea-a425-f85971c6cb7c",
+     "boost_mpl/1.69.0@bincrafters/stable#0": "372b7861-20df-11ea-a425-f85971c6cb7c",
+     "boost_predef/1.69.0@bincrafters/stable#0": "372b7863-20df-11ea-a425-f85971c6cb7c",
+     "boost_ratio/1.69.0@bincrafters/stable#0": "372b786e-20df-11ea-a425-f85971c6cb7c",
+     "boost_static_assert/1.69.0@bincrafters/stable#0": "372b7851-20df-11ea-a425-f85971c6cb7c",
+     "boost_system/1.69.0@bincrafters/stable#0": "372b787e-20df-11ea-a425-f85971c6cb7c",
+     "boost_throw_exception/1.69.0@bincrafters/stable#0": "372b7866-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c",
+     "boost_typeof/1.69.0@bincrafters/stable#0": "372b7883-20df-11ea-a425-f85971c6cb7c",
+     "boost_utility/1.69.0@bincrafters/stable#0": "372b7875-20df-11ea-a425-f85971c6cb7c",
+     "boost_winapi/1.69.0@bincrafters/stable#0": "372b7880-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7850-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_core/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b788e-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_tti/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_function_types/1.69.0@bincrafters/stable#0": "372b7882-20df-11ea-a425-f85971c6cb7c",
+     "boost_mpl/1.69.0@bincrafters/stable#0": "372b7861-20df-11ea-a425-f85971c6cb7c",
+     "boost_preprocessor/1.69.0@bincrafters/stable#0": "372b7873-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b789a-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_asio/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "boost_atomic:shared=False\nboost_chrono:shared=False\nboost_container:shared=False\nboost_context:shared=False\nboost_coroutine:shared=False\nboost_cycle_group_b:shared=False\nboost_cycle_group_c:shared=False\nboost_cycle_group_c:threadapi=default\nboost_cycle_group_c:use_bzip2=True\nboost_cycle_group_c:use_lzma=True\nboost_cycle_group_c:use_zlib=True\nboost_cycle_group_c:use_zstd=True\nboost_exception:shared=False\nboost_filesystem:shared=False\nboost_locale:shared=False\nboost_locale:use_icu=False\nboost_regex:shared=False\nboost_regex:use_icu=False\nboost_system:shared=False\nboost_thread:shared=False\nboost_thread:threadapi=default\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nlzma:fPIC=True\nlzma:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False\nzstd:fPIC=True\nzstd:shared=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_array/1.69.0@bincrafters/stable#0": "372b7858-20df-11ea-a425-f85971c6cb7c",
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_bind/1.69.0@bincrafters/stable#0": "372b7872-20df-11ea-a425-f85971c6cb7c",
+     "boost_chrono/1.69.0@bincrafters/stable#0": "372b7885-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_coroutine/1.69.0@bincrafters/stable#0": "372b7899-20df-11ea-a425-f85971c6cb7c",
+     "boost_date_time/1.69.0@bincrafters/stable#0": "372b7894-20df-11ea-a425-f85971c6cb7c",
+     "boost_function/1.69.0@bincrafters/stable#0": "372b7879-20df-11ea-a425-f85971c6cb7c",
+     "boost_regex/1.69.0@bincrafters/stable#0": "372b787b-20df-11ea-a425-f85971c6cb7c",
+     "boost_smart_ptr/1.69.0@bincrafters/stable#0": "372b7865-20df-11ea-a425-f85971c6cb7c",
+     "boost_system/1.69.0@bincrafters/stable#0": "372b787e-20df-11ea-a425-f85971c6cb7c",
+     "boost_throw_exception/1.69.0@bincrafters/stable#0": "372b7866-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c",
+     "boost_utility/1.69.0@bincrafters/stable#0": "372b7875-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b785f-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_integer/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_static_assert/1.69.0@bincrafters/stable#0": "372b7851-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7884-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_algorithm/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "boost_cycle_group_a:shared=False\nboost_exception:shared=False\nboost_regex:shared=False\nboost_regex:use_icu=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_cycle_group_a/1.69.0@bincrafters/stable#0": "372b787d-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b787b-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_regex/1.69.0@bincrafters/stable#0:618f7506f4bcc558a9de97af6ceaa8401e4291e9#0",
+    "options": "shared=False\nuse_icu=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_concept_check/1.69.0@bincrafters/stable#0": "372b785b-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_container_hash/1.69.0@bincrafters/stable#0": "372b786a-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_integer/1.69.0@bincrafters/stable#0": "372b785f-20df-11ea-a425-f85971c6cb7c",
+     "boost_iterator/1.69.0@bincrafters/stable#0": "372b7870-20df-11ea-a425-f85971c6cb7c",
+     "boost_mpl/1.69.0@bincrafters/stable#0": "372b7861-20df-11ea-a425-f85971c6cb7c",
+     "boost_predef/1.69.0@bincrafters/stable#0": "372b7863-20df-11ea-a425-f85971c6cb7c",
+     "boost_smart_ptr/1.69.0@bincrafters/stable#0": "372b7865-20df-11ea-a425-f85971c6cb7c",
+     "boost_static_assert/1.69.0@bincrafters/stable#0": "372b7851-20df-11ea-a425-f85971c6cb7c",
+     "boost_throw_exception/1.69.0@bincrafters/stable#0": "372b7866-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7887-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_filesystem/1.69.0@bincrafters/stable#0:5bfdedf40c274832cc84d74e846c8aba14f208a0#0",
+    "options": "shared=False\nboost_system:shared=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_container_hash/1.69.0@bincrafters/stable#0": "372b786a-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_detail/1.69.0@bincrafters/stable#0": "372b785d-20df-11ea-a425-f85971c6cb7c",
+     "boost_io/1.69.0@bincrafters/stable#0": "372b7888-20df-11ea-a425-f85971c6cb7c",
+     "boost_iterator/1.69.0@bincrafters/stable#0": "372b7870-20df-11ea-a425-f85971c6cb7c",
+     "boost_smart_ptr/1.69.0@bincrafters/stable#0": "372b7865-20df-11ea-a425-f85971c6cb7c",
+     "boost_static_assert/1.69.0@bincrafters/stable#0": "372b7851-20df-11ea-a425-f85971c6cb7c",
+     "boost_system/1.69.0@bincrafters/stable#0": "372b787e-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7859-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_assert/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b786a-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_container_hash/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_detail/1.69.0@bincrafters/stable#0": "372b785d-20df-11ea-a425-f85971c6cb7c",
+     "boost_integer/1.69.0@bincrafters/stable#0": "372b785f-20df-11ea-a425-f85971c6cb7c",
+     "boost_static_assert/1.69.0@bincrafters/stable#0": "372b7851-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b7880-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_winapi/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_predef/1.69.0@bincrafters/stable#0": "372b7863-20df-11ea-a425-f85971c6cb7c"
+    }
+   },
+   "372b787c-20df-11ea-a425-f85971c6cb7c": {
+    "pref": "boost_unordered/1.69.0@bincrafters/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": "boost_container:shared=False",
+    "python_requires": [
+     "boost_base/1.69.0@bincrafters/stable#0"
+    ],
+    "requires": {
+     "boost_assert/1.69.0@bincrafters/stable#0": "372b7859-20df-11ea-a425-f85971c6cb7c",
+     "boost_config/1.69.0@bincrafters/stable#0": "372b784f-20df-11ea-a425-f85971c6cb7c",
+     "boost_container/1.69.0@bincrafters/stable#0": "372b785c-20df-11ea-a425-f85971c6cb7c",
+     "boost_container_hash/1.69.0@bincrafters/stable#0": "372b786a-20df-11ea-a425-f85971c6cb7c",
+     "boost_core/1.69.0@bincrafters/stable#0": "372b7850-20df-11ea-a425-f85971c6cb7c",
+     "boost_detail/1.69.0@bincrafters/stable#0": "372b785d-20df-11ea-a425-f85971c6cb7c",
+     "boost_move/1.69.0@bincrafters/stable#0": "372b786b-20df-11ea-a425-f85971c6cb7c",
+     "boost_predef/1.69.0@bincrafters/stable#0": "372b7863-20df-11ea-a425-f85971c6cb7c",
+     "boost_preprocessor/1.69.0@bincrafters/stable#0": "372b7873-20df-11ea-a425-f85971c6cb7c",
+     "boost_smart_ptr/1.69.0@bincrafters/stable#0": "372b7865-20df-11ea-a425-f85971c6cb7c",
+     "boost_throw_exception/1.69.0@bincrafters/stable#0": "372b7866-20df-11ea-a425-f85971c6cb7c",
+     "boost_tuple/1.69.0@bincrafters/stable#0": "372b7853-20df-11ea-a425-f85971c6cb7c",
+     "boost_type_traits/1.69.0@bincrafters/stable#0": "372b7852-20df-11ea-a425-f85971c6cb7c"
+    }
+   }
+  }
+ },
+ "version": "0.1"
+}

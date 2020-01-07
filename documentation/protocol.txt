@@ -1,0 +1,100 @@
+No Video Game November						A. Leclercq
+Request for Comments: 40004					A. Vandaele
+Category: Standards Track					N. Hugot
+								            P. Sirvente
+								EPITECH
+								December 2019
+
+
+
+
+			R-TYPE COMMUNICATION PROTOCOL
+
+Status of this Memo
+
+	This memo provides information for on our R-Type communication
+protocol. Distribution of this memo is unlimited.
+
+Abstract
+
+	This document specifies how the server and the clients communicate.
+
+Table of Contents
+
+	1. Introduction
+	2. Communication protocol: packet types
+	3. Client-side
+	4. Server-side
+
+1. Introduction
+
+	This Request for Comments (RFC) provides information the R-Type
+communication protocol.
+
+R-Type is a one-to-four player game, using a client/server architecture.
+It is a space shoot'em'up.
+
+2. Communication protocol: packet types
+
+	Several packets are exchanged between the server and the clients.
+Here are the different types :
+	- Connection - 0
+	- Quit - 1
+	- Message - 2
+	- Start_Game - 3
+	- Input - 4
+	- Entities - 5
+
+They MUST be formatted the following way : X:TEXT, X being a number
+between 0 and 5 and TEXT being a message sent along the packet. 
+
+3. Client-side
+
+	The client MUST send a Connection packet to the server when
+launching the game. It must be accompanied by a message saying "Hello!"
+for the handshake with the server. Thus, the packet MUST be formatted
+this way : 0:Hello!
+
+	The client MUST send a Quit packet to the server when quitting
+the game. The message is OPTIONAL.
+
+	The client SHALL send a Message packet to the server. The
+message SHALL be filled.
+
+	The client MUST send a Start_Game packet to the server when
+ready to start the game. It should not be accompanied by a message.
+
+	The client SHALL send the Input packet to the server when
+an input is received. The message MUST be filled with either one of
+these numbers :
+	- UNDEFINED - 0
+	- UP - 1
+	- DOWN - 2
+	- LEFT - 3
+	- RIGHT - 4
+	- SHOOT - 5
+The number MUST be stringified before being sent.
+
+	The client MUST NOT send an Entites packet to the server.
+
+4. Server-side
+
+	The server MUST send a Connection packet to the client in
+response to its Connection packet. It must be accompanied by a
+message saying "Hello!" for the handshake with the client. Thus, the
+packet MUST be formatted this way : 0:Hello!
+
+	The server SHALL send a Message packet to notify the clients
+in case of an event occuring, like a client who crashed.
+
+	The server MUST send a Start_Game packet to the clients in
+response to their Start_Game packet. It SHALL be accompanied by a
+message telling the number of players connected.
+
+	The server SHALL send an Entities packet to the clients to
+tell them what entities are to be displayed on the screen. It MUST
+be accompanied by a message formatted this way: X;X;X;X;X#Y;Y;Y;Y;Y#...
+X and Y being numbers. The first number is the ID, the second is a
+type (Player, Monster... corresponding on an enum), the third is a 
+color (Enum containing Blue, Red, Yellow, Green), the fourth and
+fifth are the X and Y position in percent.

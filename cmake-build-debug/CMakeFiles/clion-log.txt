@@ -1,0 +1,13 @@
+/home/philippe/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/193.5233.144/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/philippe/Projects/CPP_rtype_2019
+CMake Error at CMakeLists.txt:7 (INCLUDE):
+  INCLUDE could not find load file:
+
+    build/conanbuildinfo.cmake
+
+
+CMake Error at CMakeLists.txt:8 (CONAN_BASIC_SETUP):
+  Unknown CMake command "CONAN_BASIC_SETUP".
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/philippe/Projects/CPP_rtype_2019/cmake-build-debug/CMakeFiles/CMakeOutput.log".
